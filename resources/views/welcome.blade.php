@@ -1,677 +1,419 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
-    <title>Fox Sim | Simulação</title>
-
-
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
-    <link href="assets/css/theme.css" rel="stylesheet" />
-    <link href="assets/css/custom.css" rel="stylesheet" /> 
-
-  </head>
-
-
-  <body>
-
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
-    <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/gallery/logo.png" height="45" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base fw-bolder">
-              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="#services">Our Services</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="#findUs">Find Us</a></li>
-            </ul>
-            <div class="dropdown d-none d-lg-block">
-              <button class="btn bg-soft-warning ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search text-warning"></i></button>
-              <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1" style="top:55px">
-                <form>
-                  <input class="form-control border-200" type="search" placeholder="Search" aria-label="Search" style="background:#FDF1DF;" />
-                </form>
+<html lang="en">
+<head>
+  <title>Simple landing page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/aos/css/aos.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <header id="header-section">
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+    <div class="container">
+      <div class="navbar-brand-wrapper d-flex w-100">
+        <img src="images/Group2.svg" alt="">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="mdi mdi-menu navbar-toggler-icon"></span>
+        </button> 
+      </div>
+      <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+          <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
+            <div class="navbar-collapse-logo">
+              <img src="images/Group2.svg" alt="">
+            </div>
+            <button class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#header-section">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#digital-marketing-section">Blog</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feedback-section">Testimonials</a>
+          </li>
+          <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+          </li>
+        </ul>
+      </div>
+    </div> 
+    </nav>   
+  </header>
+  <div class="banner" >
+    <div class="container">
+      <h1 class="font-weight-semibold">Search engine optimisation &<br>Marketing.</h1>
+      <h6 class="font-weight-normal text-muted pb-3">Simple is a simple template with a creative design that solves all your marketing and SEO queries.</h6>
+      <div>
+        <button class="btn btn-opacity-light mr-1">Get started</button>
+        <button class="btn btn-opacity-success ml-1">Learn more</button>
+      </div>
+      <img src="images/Group171.svg" alt="" class="img-fluid">
+    </div>
+  </div>
+  <div class="content-wrapper">
+    <div class="container">
+      <section class="features-overview" id="features-section" >
+        <div class="content-header">
+          <h2>How does it works</h2>
+          <h6 class="section-subtitle text-muted">One theme that serves as an easy-to-use operational toolkit<br>that meets customer's needs.</h6>
+        </div>
+        <div class="d-md-flex justify-content-between">
+          <div class="grid-margin d-flex justify-content-start">
+            <div class="features-width">
+              <img src="images/Group12.svg" alt="" class="img-icons">
+              <h5 class="py-3">Speed<br>Optimisation</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+              <a href="#"><p class="readmore-link">Readmore</p></a>  
+            </div>
+          </div>
+          <div class="grid-margin d-flex justify-content-center">
+            <div class="features-width">
+              <img src="images/Group7.svg" alt="" class="img-icons">
+              <h5 class="py-3">SEO and<br>Backlinks</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+              <a href="#"><p class="readmore-link">Readmore</p></a>
+            </div>
+          </div>
+          <div class="grid-margin d-flex justify-content-end">
+            <div class="features-width">
+              <img src="images/Group5.svg" alt="" class="img-icons">
+              <h5 class="py-3">Content<br>Marketing</h5>
+              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+              <a href="#"><p class="readmore-link">Readmore</p></a>
+            </div>
+          </div>
+        </div>
+      </section>     
+      <section class="digital-marketing-service" id="digital-marketing-section">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-7 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <h3 class="m-0">We Offer a Full Range<br>of Digital Marketing Services!</h3>
+            <div class="col-lg-7 col-xl-6 p-0">
+              <p class="py-4 m-0 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+              <p class="font-weight-medium text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer</p>
+            </div>    
+          </div>
+          <div class="col-12 col-lg-5 p-0 img-digital grid-margin grid-margin-lg-0" data-aos="fade-left">
+            <img src="images/Group1.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-7 text-center flex-item grid-margin" data-aos="fade-right">
+            <img src="images/Group2.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-lg-5 flex-item grid-margin" data-aos="fade-left">
+            <h3 class="m-0">Leading Digital Agency<br>for  Business Solution.</h3>
+            <div class="col-lg-9 col-xl-8 p-0">
+              <p class="py-4 m-0 text-muted">Power-packed with impressive features and well-optimized, this template is designed to provide the best performance in all circumstances.</p>
+              <p class="pb-2 font-weight-medium text-muted">Its smart features make it a powerful stand-alone website building tool.</p>
+            </div>
+            <button class="btn btn-info">Readmore</button>
+          </div>
+        </div>
+      </section>     
+      <section class="case-studies" id="case-studies-section">
+        <div class="row grid-margin">
+          <div class="col-12 text-center pb-5">
+            <h2>Our case studies</h2>
+            <h6 class="section-subtitle text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.</h6>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-primary text-center card-contents">
+                  <div class="card-image">
+                    <img src="images/Group95.svg" class="case-studies-card-img" alt="">
+                  </div>  
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Online marketing</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>   
+                <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Online Marketing</h6>
+                    <p>Seo, Marketing</p>
+                </div>
               </div>
-            </div><a class="btn btn-primary order-1 order-lg-0 ms-lg-3" href="#!">Contact Us</a>
-            <form class="d-flex my-3 d-block d-lg-none">
-              <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-warning text-center card-contents">
+                  <div class="card-image">
+                      <img src="images/Group108.svg" class="case-studies-card-img" alt="">
+                  </div>  
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Web Development</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>   
+                <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Web Development</h6>
+                    <p>Developing, Designing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-violet text-center card-contents">
+                  <div class="card-image">
+                      <img src="images/Group126.svg" class="case-studies-card-img" alt="">
+                  </div>  
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Web Designing</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>   
+                <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Web Designing</h6>
+                    <p>Designing, Developing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-success text-center card-contents">
+                  <div class="card-image">
+                      <img src="images/Group115.svg" class="case-studies-card-img" alt="">
+                  </div>  
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Software Development</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>   
+                <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Software Development</h6>
+                    <p>Developing, Designing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>     
+      <section class="customer-feedback" id="feedback-section">
+        <div class="row">
+          <div class="col-12 text-center pb-5">
+            <h2>What our customers have to say</h2>
+            <h6 class="section-subtitle text-muted m-0">Lorem ipsum dolor sit amet, tincidunt vestibulum.</h6>
+          </div>
+          <div class="owl-carousel owl-theme grid-margin">
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Tony Martinez</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Sophia Armstrong</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Cody Lambert</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face15.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Cody Lambert</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face16.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Cody Lambert</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face1.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Tony Martinez</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Tony Martinez</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Sophia Armstrong</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card customer-cards">
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <div class="content-divider m-auto"></div>
+                    <h6 class="card-title pt-3">Cody Lambert</h6>
+                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us" id="contact-section">
+        <div class="contact-us-bgimage grid-margin" >
+          <div class="pb-4">
+            <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">Do you have any projects?</h4>
+            <h4 class="pt-1" data-aos="fade-down">Contact us</h4>
+          </div>
+          <div data-aos="fade-up">
+            <button class="btn btn-rounded btn-outline-danger">Contact us</button>
+          </div>          
+        </div>
+      </section>
+      <section class="contact-details" id="contact-details-section">
+        <div class="row text-center text-md-left">
+          <div class="col-12 col-md-6 col-lg-3 grid-margin">
+            <img src="images/Group2.svg" alt="" class="pb-2">
+            <div class="pt-2">
+              <p class="text-muted m-0">mikayla_beer@feil.name</p>
+              <p class="text-muted m-0">906-179-8309</p>
+            </div>         
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 grid-margin">
+            <h5 class="pb-2">Get in Touch</h5>
+            <p class="text-muted">Don’t miss any updates of our new templates and extensions.!</p>
+            <form>
+              <input type="text" class="form-control" id="Email" placeholder="Email id">
             </form>
+            <div class="pt-3">
+              <button class="btn btn-dark">Subscribe</button>
+            </div>   
           </div>
-        </div>
-      </nav>
-      <section class="py-xxl-10 pb-0" id="home">
-        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/hero-header-bg.png);background-position:top center;background-size:cover;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="assets/img/illustrations/hero.png" alt="hero-header" /></div>
-            <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-8">
-              <h1 class="fw-normal fs-6 fs-xxl-7">A trusted provider of </h1>
-              <h1 class="fw-bolder fs-6 fs-xxl-7 mb-2">courier services.</h1>
-              <p class="fs-1 mb-5">We deliver your products safely to <br />your home in a reasonable time. </p><a class="btn btn-primary me-2" href="#!" role="button">Get started<i class="fas fa-arrow-right ms-2"></i></a>
-            </div>
+          <div class="col-12 col-md-6 col-lg-3 grid-margin">
+            <h5 class="pb-2">Our Guidelines</h5>
+            <a href="#"><p class="m-0 pb-2">Terms</p></a>   
+            <a href="#" ><p class="m-0 pt-1 pb-2">Privacy policy</p></a> 
+            <a href="#"><p class="m-0 pt-1 pb-2">Cookie Policy</p></a> 
+            <a href="#"><p class="m-0 pt-1">Discover</p></a> 
           </div>
-        </div>
+          <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <h5 class="pb-2">Our address</h5>
+              <p class="text-muted">518 Schmeler Neck<br>Bartlett. Illinois</p>
+              <div class="d-flex justify-content-center justify-content-md-start">
+                <a href="#"><span class="mdi mdi-facebook"></span></a>
+                <a href="#"><span class="mdi mdi-twitter"></span></a>
+                <a href="#"><span class="mdi mdi-instagram"></span></a>
+                <a href="#"><span class="mdi mdi-linkedin"></span></a>
+              </div>
+          </div>
+        </div>  
       </section>
+      <footer class="border-top">
+        <p class="text-center text-muted pt-4">Copyright © 2019<a href="https://www.bootstrapdash.com/" class="px-1">Bootstrapdash.</a>All rights reserved.</p>
 
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-7" id="services" container-xl="container-xl">
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-5 text-center mb-3">
-              <h5 class="text-danger">SERVICES</h5>
-              <h2>Our services for you</h2>
+        <p class="text-center text-muted pt-2">Distributed By: <a href="https://www.themewagon.com/" class="px-1" target="_blank">Themewagon</a></p>
+      </footer>
+      <!-- Modal for Contact - us Button -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
             </div>
-          </div>
-          <div class="row h-100 justify-content-center">
-            <div class="col-md-4 pt-4 px-md-2 px-lg-3">
-              <div class="card h-100 px-lg-5 card-span">
-                <div class="card-body d-flex flex-column justify-content-around">
-                  <div class="text-center pt-5"><img class="img-fluid" src="assets/img/icons/services-1.svg" alt="..." />
-                    <h5 class="my-4">Business Services</h5>
-                  </div>
-                  <p>Offering home delivery around the city, where your products will be at your doorstep within 48-72 hours.</p>
-                  <ul class="list-unstyled">
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Corporate goods
-                    </li>
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Shipment
-                    </li>
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Accesories
-                    </li>
-                  </ul>
-                  <div class="text-center my-5">
-                    <div class="d-grid">
-                      <button class="btn btn-outline-danger" type="submit">Learn more </button>
-                    </div>
-                  </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input type="text" class="form-control" id="Name" placeholder="Name">
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 pt-4 px-md-2 px-lg-3">
-              <div class="card h-100 px-lg-5 card-span">
-                <div class="card-body d-flex flex-column justify-content-around">
-                  <div class="text-center pt-5"><img class="img-fluid" src="assets/img/icons/services-2.svg" alt="..." />
-                    <h5 class="my-4">Statewide Services</h5>
-                  </div>
-                  <p>Offering home delivery around the city, where your products will be at your doorstep within 48-72 hours.</p>
-                  <ul class="list-unstyled">
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Unlimited Bandwidth
-                    </li>
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Encrypted Connection
-                    </li>
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Yes Traffic Logs
-                    </li>
-                  </ul>
-                  <div class="text-center my-5">
-                    <div class="d-grid">
-                      <button class="btn btn-danger hover-top btn-glow border-0" type="submit">Learn more</button>
-                    </div>
-                  </div>
+                <div class="form-group">
+                  <label for="Email">Email</label>
+                  <input type="email" class="form-control" id="Email-1" placeholder="Email">
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 pt-4 px-md-2 px-lg-3">
-              <div class="card h-100 px-lg-5 card-span">
-                <div class="card-body d-flex flex-column justify-content-around">
-                  <div class="text-center pt-5"><img class="img-fluid" src="assets/img/icons/services-3.svg" alt="..." />
-                    <h5 class="my-4">Personal Services</h5>
-                  </div>
-                  <p>You can trust us to safely deliver your most sensitive documents to the specific area in a short time.</p>
-                  <ul class="list-unstyled">
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Unlimited Bandwidth
-                    </li>
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Encrypted Connection
-                    </li>
-                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Yes Traffic Logs
-                    </li>
-                  </ul>
-                  <div class="text-center my-5">
-                    <div class="d-grid">
-                      <button class="btn btn-outline-danger" type="submit">Learn more </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="pt-7 pb-0">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-6 col-lg mb-5">
-              <div class="text-center"><img src="assets/img/icons/awards.png" alt="..." />
-                <h1 class="text-primary mt-4">26+</h1>
-                <h5 class="text-800">Awards won</h5>
-              </div>
-            </div>
-            <div class="col-6 col-lg mb-5">
-              <div class="text-center"><img src="assets/img/icons/states.png" alt="..." />
-                <h1 class="text-primary mt-4">65+</h1>
-                <h5 class="text-800">States covered</h5>
-              </div>
-            </div>
-            <div class="col-6 col-lg mb-5">
-              <div class="text-center"><img src="assets/img/icons/clients.png" alt="..." />
-                <h1 class="text-primary mt-4">689K+</h1>
-                <h5 class="text-800">Happy clients</h5>
-              </div>
-            </div>
-            <div class="col-6 col-lg mb-5">
-              <div class="text-center"><img src="assets/img/icons/goods.png" alt="..." />
-                <h1 class="text-primary mt-4">130M+</h1>
-                <h5 class="text-800">Goods delivered</h5>
-              </div>
-            </div>
-            <div class="col-6 col-lg mb-5">
-              <div class="text-center"><img src="assets/img/icons/business.png" alt="..." />
-                <h1 class="text-primary mt-4">130M+</h1>
-                <h5 class="text-800">Business hours</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="card bg-dark text-white py-4 py-sm-0"><img class="w-100" src="assets/img/gallery/video.png" alt="video" />
-                <div class="card-img-overlay bg-dark-gradient d-flex flex-column flex-center"><img src="assets/img/icons/play.png" width="80" alt="play" />
-                  <h5 class="text-primary">FASTEST DELIVERY</h5>
-                  <p class="text-center">You can get your valuable item in the fastest period of<br class="d-none d-sm-block" />time with safety. Because your emergency<br class="d-none d-sm-block" />is our first priority.</p><a class="stretched-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                      <div class="modal-content overflow-hidden">
-                        <div class="modal-header p-0">
-                          <div class="ratio ratio-16x9" id="exampleModalLabel">
-                            <iframe src="https://www.youtube.com/embed/TlcP2aTOp-Q" title="YouTube video" allowfullscreen="allowfullscreen"></iframe>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-7">
-
-        <div class="container-fluid">
-          <div class="row flex-center">
-            <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/quote.png);background-position:top;background-size:auto;margin-left:-270px;margin-top:-45px;">
-            </div>
-            <!--/.bg-holder-->
-
-            <div class="col-md-8 col-lg-5 text-center">
-              <h5 class="text-danger">TESTIMONIAL</h5>
-              <h2>Our Awesome Clients</h2>
-            </div>
-          </div>
-          <div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <div class="row h-100">
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it.</p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .</p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <div class="row h-100">
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .</p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row h-100">
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">“I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card h-100 card-span p-3">
-                      <div class="card-body">
-                        <h5 class="mb-0 text-primary">Fantastic service!</h5>
-                        <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .</p>
-                        <div class="d-xl-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                          <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
-                            <div class="flex-1 ms-3">
-                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
-                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row px-3 px-md-0 mt-6">
-              <div class="col-12 position-relative">
-                <ol class="carousel-indicators">
-                  <li class="active" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"></li>
-                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section>
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-5 col-xl-4"><img src="assets/img/illustrations/callback.png" alt="..." />
-              <h5 class="text-danger">REQUEST A CALLBACK</h5>
-              <h2>We will contact in the shortest time.</h2>
-              <p class="text-muted">Monday to Friday, 9am-5pm.</p>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-4">
-              <form class="row">
-                <div class="mb-3">
-                  <label class="form-label visually-hidden" for="inputName">Name</label>
-                  <input class="form-control form-quriar-control" id="inputName" type="text" placeholder="Name" />
-                </div>
-                <div class="mb-3">
-                  <label class="form-label visually-hidden" for="inputEmail">Another label</label>
-                  <input class="form-control form-quriar-control" id="inputEmail" type="email" placeholder="Email" />
-                </div>
-                <div class="mb-5">
-                  <label class="form-label visually-hidden" for="validationTextarea">Message</label>
-                  <textarea class="form-control form-quriar-control is-invalid border-400" id="validationTextarea" placeholder="Message" style="height: 150px" required="required"></textarea>
-                </div>
-                <div class="d-grid">
-                  <button class="btn btn-primary" type="submit">Send Message<i class="fas fa-paper-plane ms-2"></i></button>
+                <div class="form-group">
+                  <label for="Message">Message</label>
+                  <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
                 </div>
               </form>
             </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section id="findUs">
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-5 mb-6 text-center">
-              <h5 class="text-danger">FIND US</h5>
-              <h2>Access us easily</h2>
-            </div>
-            <div class="col-12">
-              <div class="card card-span rounded-2 mb-3">
-                <div class="row">
-                  <div class="col-md-6 col-lg-7 d-flex"><img class="w-100 fit-cover rounded-md-start rounded-top rounded-md-top-0" src="assets/img/gallery/map.svg" alt="map" /></div>
-                  <div class="col-md-6 col-lg-5 d-flex flex-center">
-                    <div class="card-body">
-                      <h5>Contact with us</h5>
-                      <p class="text-700 my-4"> <i class="fas fa-map-marker-alt text-warning me-3"></i><span>2277 Lorem Ave, San Diego, CA 22553</span></p>
-                      <p><i class="fas fa-phone-alt text-warning me-3"></i><span class="text-700">Monday - Friday: 10 am - 10pm<br/><span class="ps-4">Sunday: 11 am - 9pm  </span></span></p>
-                      <p><i class="fas fa-envelope text-warning me-3"> </i><a class="text-700" href="mailto:vctung@outlook.com"> info@quriarbox.com</a></p>
-                      <ul class="list-unstyled list-inline mt-5">
-                        <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i class="fab fa-facebook-square fs-2"></i></a></li>
-                        <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i class="fab fa-instagram-square fs-2"></i></a></li>
-                        <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i class="fab fa-twitter-square fs-2"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-primary px-5" type="submit"><i class="fas fa-phone-alt me-2"></i><a class="text-light" href="tel:123-456789">Call us to delivery 123-456789</a></button>
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Submit</button>
             </div>
           </div>
         </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="bg-1000">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <h2 class="fw-bold text-white">Get an update every week</h2>
-              <p class="text-300">We ensure that your product is delivered in the safest possible<br />manner, at the correct location, at the right time.</p>
-            </div>
-            <div class="col-lg-6">
-              <h5 class="text-primary mb-3">SUBSCRIBE TO NEWSLETTER </h5>
-              <form class="row gx-2 gy-2 align-items-center">
-                <div class="col">
-                  <div class="input-group-icon">
-                    <label class="visually-hidden" for="inputEmailCta">Address</label>
-                    <input class="form-control input-box form-quriar-control text-light" id="inputEmailCta" type="email" placeholder="Enter your mail" />
-                  </div>
-                </div>
-                <div class="d-grid gap-3 col-sm-auto">
-                  <button class="btn btn-danger" type="submit">Subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="bg-900 pb-0 pt-5">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0"><a class="text-decoration-none" href="#"><img src="assets/img/gallery/footer-logo.png" height="51" alt="" /></a>
-              <p class="text-500 my-4">The most trusted Courier<br />company in your area.</p>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">
-              <h5 class="lh-lg fw-bold mb-4 text-light font-sans-serif">Other links </h5>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-500" href="#!">Blogs</a></li>
-                <li class="lh-lg"><a class="text-500" href="#!">Movers website</a></li>
-                <li class="lh-lg"><a class="text-500" href="#!">Traffic Update</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
-              <h5 class="lh-lg fw-bold text-light mb-4 font-sans-serif">Services</h5>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-500" href="#!">Corporate goods</a></li>
-                <li class="lh-lg"><a class="text-500" href="#!">Artworks</a></li>
-                <li class="lh-lg"><a class="text-500" href="#!">Documents</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
-              <h5 class="lh-lg fw-bold text-light mb-4 font-sans-serif"> Customer Care</h5>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-500" href="#!">About Us</a></li>
-                <li class="lh-lg"><a class="text-500" href="#!">Contact US</a></li>
-                <li class="lh-lg"><a class="text-500" href="#!">Get Update</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-0 bg-1000">
-
-        <div class="container">
-          <div class="row justify-content-md-between justify-content-evenly py-4">
-            <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
-              <p class="fs--1 my-2 fw-bold text-200">All rights Reserved &copy; Your Company, 2021</p>
-            </div>
-            <div class="col-12 col-sm-8 col-md-6">
-              <p class="fs--1 my-2 text-center text-md-end text-200"> Made with&nbsp;
-                <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#F95C19" viewBox="0 0 16 16">
-                  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
-                </svg>&nbsp;by&nbsp;<a class="fw-bold text-primary" href="https://themewagon.com/" target="_blank">ThemeWagon </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-    </main>
-    <!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
-
-
-
-
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="vendors/@popperjs/popper.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="vendors/fontawesome/all.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </body>
-
+      </div>
+    </div> 
+  </div>
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="vendors/aos/js/aos.js"></script>
+  <script src="js/landingpage.js"></script>
+</body>
 </html>
